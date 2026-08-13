@@ -2,8 +2,10 @@ package com.xzj.lotterysystem.common.pojo;
 
 import com.xzj.lotterysystem.common.errorcode.ErrorCode;
 import com.xzj.lotterysystem.common.errorcode.GlobalErrorcodeConstants;
+import lombok.Data;
 import org.springframework.util.Assert;
 
+@Data
 public class CommonResult<T> {
     /**
      * 返回的错误码
