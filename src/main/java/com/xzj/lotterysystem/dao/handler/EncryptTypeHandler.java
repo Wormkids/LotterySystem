@@ -1,4 +1,4 @@
-package com.xzj.lotterysystem.dao.hander;
+package com.xzj.lotterysystem.dao.handler;
 
 
 import cn.hutool.crypto.SecureUtil;
@@ -16,7 +16,7 @@ import java.sql.SQLException;
 
 @MappedTypes(Encryppt.class)        //被处理的类型
 @MappedJdbcTypes(JdbcType.VARCHAR)  //转换后的jdbc类型
-public class EncryptTypeHander implements TypeHandler<Encryppt> {
+public class EncryptTypeHandler implements TypeHandler<Encryppt> {
 
     //密钥
     private final byte[] key = "1234567890123456".getBytes();
